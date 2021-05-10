@@ -34,6 +34,8 @@ import EditProfile from './screens/EditProfileScreen'
 import VideosScreen from './screens/Videos'
 import PreviewScreen from './screens/Preview'
 import SingleUserScreen from './screens/SingleUser'
+import ExercicesScreen from './screens/Exercices'
+
 
 const Stack = createStackNavigator()
 const Stacklog = createStackNavigator()
@@ -87,6 +89,7 @@ export default function App() {
                 <Stacklog.Screen name="Videos" component={VideosScreen} options={{ headerShown: true , title : 'Mes Vidéos'}}/>
                 <Stacklog.Screen name="Preview" component={PreviewScreen} options={{ headerShown: true , title : 'Envoyer Mon Rapport'}}/>
                 <Stacklog.Screen name="Single User" component={SingleUserScreen} options={{ headerShown: false }}/>
+                <Stacklog.Screen name="Exercices" component={ExercicesScreen} options={{ headerShown: true }}/>
               </Stacklog.Navigator>
               :
               null
