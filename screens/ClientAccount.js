@@ -80,7 +80,7 @@ export class ClientDashboard extends PureComponent {
                                 <Text style={styles.menuItemText}>Mes Vidéos</Text>
                             </View>
                         </TouchableRipple>
-                        <TouchableRipple onPress={() => {}}>
+                        <TouchableRipple onPress={() => {this.props.navigation.navigate("Exercices")}}>
                             <View style={styles.menuItem}>
                                 <Icon name="share-outline" color="#FF6347" size={25}/>
                                 <Text style={styles.menuItemText}>Envoyer</Text>
