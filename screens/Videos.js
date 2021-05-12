@@ -4,6 +4,8 @@ import moment from 'moment'
 import { Video } from 'expo-av'
 import Icon from 'react-native-vector-icons/Fontisto'
 import bgImg from '../images/bgvideo.jpg'
+import { TouchableRipple} from 'react-native-paper'
+
 
 function Timer({ interval, style }) {
   const pad = (n) => n < 10 ? '0' + n : n
@@ -147,7 +149,7 @@ export default class Videos extends Component {
             <ImageBackground blurRadius={2} style={styles.backgroundContainer} source={bgImg} >
               <View style={styles.container}>
                   <Video
-                    source={{ uri: 'http://d23dyxeqlo5psv.cloudfront.net/big_buck_bunny.mp4' }}
+                    source={require('../assets/videos/video1.mp4')}
                     rate={1.0}
                     volume={1.0}
                     isMuted={false}
@@ -206,11 +208,17 @@ export default class Videos extends Component {
                       background='#1B361F'
                       onPress={this.resume}
                     />
+                    
                   </ButtonsRow>
                 )}
                 <LapsTable laps={laps} timer={timer}/>
               </View>
-          
+              <TouchableRipple onPress={() => {this.props.navigation.navigate("Preview")}}>
+                                <View style={{ width:300,marginLeft: 20,borderRadius : 80, alignItems : 'center', justifyContent :'center',height: 60,  backgroundColor: 'white', marginBottom : 20, flexDirection:'row'}}>
+                                    
+                                <Text style={{fontSize: 20,color: '#FF6347', fontWeight:'bold' }}>Envoyer Mon Bilan</Text>
+                                </View>
+                            </TouchableRipple>
             </ImageBackground>
           </ScrollView>
         </SafeAreaView>

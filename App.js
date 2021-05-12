@@ -32,6 +32,7 @@ import LoginScreen from './screens/auth/Login'
 import Profile from './screens/Profile'
 import EditProfile from './screens/EditProfileScreen'
 import VideosScreen from './screens/Videos'
+import BeforeVid from './screens/BeforeVid'
 import PreviewScreen from './screens/Preview'
 import SingleUserScreen from './screens/SingleUser'
 import ExercicesScreen from './screens/Exercices'
@@ -87,6 +88,7 @@ export default function App() {
                 <Stacklog.Screen name="Profile" component={Profile} options={{ headerShown: false }} />
                 <Stacklog.Screen name="EditProfile" component={EditProfile} options={{ headerShown: true , title : 'Modifier Votre Profil'}}/>
                 <Stacklog.Screen name="Videos" component={VideosScreen} options={{ headerShown: true , title : 'Mes Vidéos'}}/>
+                <Stacklog.Screen name="Before" component={BeforeVid} options={{ headerShown: true , title : 'Mes Vidéos'}}/>
                 <Stacklog.Screen name="Preview" component={PreviewScreen} options={{ headerShown: true , title : 'Envoyer Mon Rapport'}}/>
                 <Stacklog.Screen name="Single User" component={SingleUserScreen} options={{ headerShown: false }}/>
                 <Stacklog.Screen name="Exercices" component={ExercicesScreen} options={{ headerShown: true }}/>

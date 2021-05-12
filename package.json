@@ -39,6 +39,9 @@
     "redux": "^4.1.0",
     "redux-thunk": "^2.3.0"
   },
+  "resolutions": {
+    "react-native-svg": "12.1.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.9.0"
   },

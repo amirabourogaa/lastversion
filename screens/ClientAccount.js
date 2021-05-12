@@ -75,16 +75,16 @@ export class ClientDashboard extends PureComponent {
                     </View>
 
                     <View tyle={styles.menuWrapper}>
-                        <TouchableRipple onPress={() => {this.props.navigation.navigate("Videos")}}>
+                        <TouchableRipple onPress={() => {this.props.navigation.navigate("Exercices")}}>
                             <View style={styles.menuItem}>
-                                <Icon name="video-3d-variant" color="#FF6347" size={25}/>
-                                <Text style={styles.menuItemText}>Mes Vidéos</Text>
+                                <Icon name="human" color="#FF6347" size={25}/>
+                                <Text style={styles.menuItemText}>Mes Exercices</Text>
                             </View>
                         </TouchableRipple>
-                        <TouchableRipple onPress={() => {this.props.navigation.navigate("Preview")}}>
+                        <TouchableRipple onPress={() => {this.props.navigation.navigate("Before")}}>
                             <View style={styles.menuItem}>
-                                <Icon name="share-outline" color="#FF6347" size={25}/>
-                                <Text style={styles.menuItemText}>Envoyer</Text>
+                            <Icon name="video-3d-variant" color="#FF6347" size={25}/>
+                                <Text style={styles.menuItemText}>Mes Vidéos</Text>
                             </View>
                         </TouchableRipple>
                         
